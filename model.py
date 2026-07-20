@@ -1,4 +1,3 @@
-cat << 'EOF' > model.py
 import os
 import requests
 
@@ -28,4 +27,3 @@ def generate_answer(prompt: str) -> str:
 
     except Exception as e:
         return f"Une erreur est survenue : {str(e)}"
-EOF
