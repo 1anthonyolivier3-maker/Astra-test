@@ -29,4 +29,3 @@ def generate_answer(prompt: str) -> str:
     except Exception as e:
         return f"Une erreur est survenue : {str(e)}"
 EOF
-
