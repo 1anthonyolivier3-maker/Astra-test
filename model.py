@@ -3,7 +3,7 @@ import requests
 
 HF_TOKEN = os.environ.get("HF_TOKEN")
 MODEL_ID = "HuggingFaceH4/zephyr-7b-beta"
-API_URL = f"https://api-inference.huggingface.co/models/{MODEL_ID}"
+API_URL = f"https://router.huggingface.co/hf-inference/v1/models/{MODEL_ID}"
 
 def generate_answer(prompt: str) -> str:
     if not HF_TOKEN:
